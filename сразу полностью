@@ -1,0 +1,34 @@
+public class User {
+    String name;
+    short age;
+    int height;
+//имя возраст рост
+public User(String name, short age, int height){
+this.name = name;
+this.age = age;
+this.height = height;
+}
+//имя рост возраст
+public User(String name, int height, short age){
+this.name = name;
+this.height = height;
+this.age = age;
+}
+//возраст имя рост
+    public User(short age, String name, int height){
+    this.age = age;
+    this.name = name;
+    this.height = height;
+    }
+    public static void main(String[] args){
+    User Ivan = new User((short)35, "Ivan", 185);
+    System.out.println(Ivan.age + " " + Ivan.name + " " + Ivan.height);
+    User Petr = new User("Petr", (short)24, 177);
+    System.out.println(Petr.age + " " + Petr.name + " " + Petr.height);
+    User Fedor = new User("Fedor", 180, (short)39);
+    System.out.println(Fedor.age + " " + Fedor.name + " " + Fedor.height);
+
+
+
+    }
+}
